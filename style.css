@@ -104,6 +104,7 @@ h2{
 }
 
 @media screen and (max-width: 375px){
+  
   ul{ 
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -111,7 +112,10 @@ h2{
     justify-content: center;
     list-style: none;
     padding: 1%;
-}
+  }
+  #heroes{
+    display: grid;
+  }
   #sobre{
     display: flex;
     flex-direction: column;
