@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    width: 100%;
+    background-color: #0A6EBD;
+}
+ul{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    justify-content: center;
+    list-style: none;
+    padding: 1%;
+}
+li a{
+    text-decoration: none;
+    color: #E7CEA6;
+}
+.about-text{
+  text-align: left;
+}
+#heroes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+}
+#sobre{
+  background-color: #DAFFFB;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+}
+.about-text{
+  width: 30%;
+}
+.container-img{
+  border-radius: 10px;
+  height: 30vh;
+  box-shadow: 2px 2px 0px 2px #1D5B79;
+}
+#midle-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  background-color: #E7CEA6;
+}
+.title{
+  padding: 4%;
+  margin: 4%;
+}
+.text-card{
+  text-align: center;
+}
+.project-img{
+  border: 5px;
+  border-style: ridge;
+}
+.img-svg{
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #64CCC5, #5A96E3);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+h1{
+  font-family: 'Yellowtail', cursive;
+}
+h2{
+  padding: 2%;
+}
+#midle-container{
+  padding: 2%;
+  display: flex;
+}
+.container-projects{
+  text-align: center;
+  padding: 2%;
+}
+.roll{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+@media screen and (max-width: 375px){
+  ul{ 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 1%;
+}
+  #sobre{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text{
+    margin: 8%;
+    width: 65%;
+  }
+  .roll{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
